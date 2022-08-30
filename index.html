@@ -1,18 +1,11 @@
 <html>
 <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
 <script src="js/openseadragon/openseadragon.min.js"></script>
-<select id="choose">
-	<option value="./DZI.dzi">Cardiac</option>
-	<option value="./T1.dzi">Test1</option>
-	<option value="./T2.dzi">Test2</option>
-</select>
-var select = document.getElementById('choose');
-var value1 = select.options[select.selectedIndex].value;
 <script type="text/javascript">
     var viewer = OpenSeadragon({
         id: "openseadragon1",
         prefixUrl: "js/openseadragon/images/",
-        tileSources: value1
+        tileSources: "./DZI.dzi"
     });
 </script>
 </html>
